@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootswatch bootstrap -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+
+
+    <!-- Icons Fontawesome -->
+    <script src="https://kit.fontawesome.com/28a02cc159.js" crossorigin="anonymous"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>My Notepad</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+        <div class="heading">
+            <h1 class="display-4 text-center">
+                <i class="fas fa-book-open text-primary"></i>
+                Notepad
+            </h1>
+        </div>
+        
+        <form id="note-form">
+            <div class="form-group">
+                <label for="title">Title</label><br>
+                <input type="text" class="form-control"  name="title" id="title">
+            </div>
+            <div class="form-group">
+                <label for="desc">Description</label><br>
+                <textarea type="text" class="form-control"  name="desc" id="desc" rows="3" cols="100"></textarea>
+            </div>
+            <span>Choose Background Color</span>
+            <div class="mb-4 float-right swatches">   
+                <div class="bg-primary swatch active"></div>
+                <div class="bg-secondary swatch"></div>
+                <div class="bg-success swatch "></div>
+                <div class="bg-danger swatch"></div>
+                <div class="bg-warning swatch"></div>
+                <div class="bg-info swatch"></div>
+                <div class="bg-light swatch"></div>
+                <div class="bg-dark swatch"></div>
+                <div class="bg-white swatch"></div>
+            </div>
+            <input type="submit" value="Add Note" class="btn btn-primary btn-block">
+            <input type="button" id="clear" value="Clear all notes" class="btn btn-danger btn-block">
+            <input type="text" id="noteid" class="hidden">
+        </form>
+        <div id="note-list" class="mt-5 d-flex flex-wrap">
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"> </script>
+
+  </body>
+</html>
